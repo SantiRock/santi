@@ -192,6 +192,10 @@ export const data = {
                 {
                     id: 0,
                     description: "Vue"
+                },
+                {
+                    id: 1,
+                    description: "React Native"
                 }
             ],
             titleaf: "En el congleador",
@@ -416,6 +420,10 @@ export const data = {
                 {
                     id: 0,
                     description: "Vue"
+                },
+                {
+                    id: 1,
+                    description: "React Native"
                 }
             ],
             titleaf: "In the fridge",
