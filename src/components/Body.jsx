@@ -6,6 +6,7 @@ const Section = ({content}) => {
     return(
         <section id={content.id} name={content.title} className=" bg-blue-100 px-10 py-5 shadow-xl sm:mb-10 rounded-xl">
             <h3 className="mb-1">{content.title}</h3>
+            <div className="my-4 px-5"><a href={content.link} target="_blank"><img src={content.image} alt={content.title} className="rounded-lg"/></a></div>
             <p className="indent-8 text-justify mb-3" dangerouslySetInnerHTML={{__html: content.text }}></p>
             <ul>
                 {content.links.map(link => (
@@ -22,8 +23,9 @@ const Contact = ({contact}) => {
 
     return(
         <section id="contact" name="contact" className=" bg-blue-100 px-10 py-5 shadow-xl sm:mb-10 rounded-xl">
-            <h3 className="mb-1">{contact}</h3>
+            <h3 className="mb-1">{contact.title}</h3>
             <p className="text-gray-700">sqp.dev@gmail.com</p>
+            <div className="my-4 px-5"><a href={contact.link} target="_blank"><img src={contact.image} alt={contact.title} className="rounded-lg"/></a></div>
         </section>
     )
 }
