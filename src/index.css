@@ -1,0 +1,122 @@
+@import-normalize;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  font-family: "Open sans", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgb(0, 0, 0);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  min-width: 340px;
+
+  background: linear-gradient(0deg, rgba(0,3,25,1) 1%, rgba(24,78,133,1) 19%, rgba(248,255,193,1) 100%);
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  color:rgb(26, 26, 26);
+  font-weight: 600;
+}
+
+li,
+p {
+  color: rgb(33, 33, 33);
+}
+
+section {
+  margin-bottom: 17px;
+  transition: transform 0.5s ease;
+}
+
+@media screen and (min-width: 639px) {
+  section:hover {
+    transform: scale(1.04);
+  } 
+}
+
+
+a {
+  font-weight: 600;
+  color: rgb(38, 46, 88);
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: rgb(192, 192, 156);
+}
+
+img {
+  transition: transform 0.5s ease;
+}
+
+img:hover {
+  transform: scale(1.04);
+}
+
+button {
+  transition:transform 0.5s ease;
+}
+
+button:hover {
+  transform: rotate(180deg);
+}
+
+button:focus {
+  outline: none;
+}
+
+@media screen and (width-min: 900px) {
+  .nav {
+    display: flex;
+  }
+  
+  .nav_mobile {
+    display: none;
+  }
+}
