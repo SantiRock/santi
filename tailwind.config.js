@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'mdd': '900px',
+        'mdd': '970px',
       },
       colors: {
         'nav': 'rgb(248,255,193)',

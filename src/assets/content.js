@@ -28,6 +28,11 @@ export const data = {
             },
             {
                 id: 5,
+                link: "#contact",
+                text: "Contact"
+            },
+            {
+                id: 6,
                 link: "#next",
                 text: "Próximamente..."
             },
@@ -247,6 +252,11 @@ export const data = {
             },
             {
                 id: 5,
+                link: "#contact",
+                text: "Contact"
+            },
+            {
+                id: 6,
                 link: "#next",
                 text: "Coming soon..."
             },
