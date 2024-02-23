@@ -29,7 +29,7 @@ export const data = {
             {
                 id: 5,
                 link: "#next",
-                text: "Próximamente"
+                text: "Próximamente..."
             },
         ],
         header: "Desarrollador Front-End Junior",
@@ -234,7 +234,7 @@ export const data = {
             {
                 id: 5,
                 link: "#next",
-                text: "Coming soon"
+                text: "Coming soon..."
             },
         ],
         header: "Junior Front-End Developer",
