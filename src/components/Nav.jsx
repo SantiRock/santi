@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setLanguage, setLg } from "../redux/slice";
-import { setShowModal } from "../redux/modalSlice";
-import { getLg, getShowModal } from "../redux/selectors";
+import { setShowModal, setTransition } from "../redux/modalSlice";
+import { getLg, getShowModal, getTransition } from "../redux/selectors";
 import styled, { keyframes } from "styled-components";
+
+//// Burger
 
 const BurguerMobile = ({ onClick }) => (
   <button
@@ -12,63 +14,112 @@ const BurguerMobile = ({ onClick }) => (
   ></button>
 );
 
+/// Modal
+
 const NavModal = ({ nav }) => {
   const sm = useSelector(getShowModal);
+  const tr = useSelector(getTransition);
   const dispatch = useDispatch();
 
+  // Anim
+
+  const slideIn = keyframes`
+from {
+  transform: translateX(288px);
+}
+to {
+  transform: translateX(0);
+}
+`;
+
+  const slideOut = keyframes`
+from {
+  transform: translateX(0);
+}
+to {
+  transform: translateX(288px);
+}
+`;
+
+  const ModalContainer = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    justify-content: center;
+    align-items: center;
+    animation: ${(props) => (props.showmodal ? slideIn : slideOut)} 0.3s
+      ease-in-out;
+  `;
+
+  // Handlers
+
   const closeModal = () => {
-    dispatch(setShowModal(false));
+    dispatch(setTransition(false));
+    setTimeout(() => {
+      dispatch(setShowModal(false));
+    }, 290);
   };
 
   const clickClose = (evt) => {
     if (evt.currentTarget === evt.target) {
-      dispatch(setShowModal(false));
+      dispatch(setTransition(false));
+      setTimeout(() => {
+        dispatch(setShowModal(false));
+      }, 290);
     }
   };
 
-  const modalClasses = `modal-container ${sm ? 'show' : 'hide'}`;
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      dispatch(setTransition(false));
+      setTimeout(() => {
+        dispatch(setShowModal(false));
+      }, 290);
+    }
+  });
 
   return (
     <>
       {sm && (
-        <div className={modalClasses} onClick={clickClose}>
-        <div className="modal fixed top-0 right-0 z-10 bg-emerald-100 w-72 h-screen text-end py-2 px-11">
-          <button
-            onClick={closeModal}
-            className="text-2xl hover:text-emerald-400"
-          >
-            X
-          </button>
-          <ul className="text-start mt-3">
-            {nav.map((n) => (
-              <li key={n.id} className="text-xl mb-5">
-                <a
-                  href={n.link}
-                  onClick={closeModal}
-                  className="text-emerald-700 font-normal"
-                >
-                  {n.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+        <ModalContainer showmodal={tr ? 1 : 0} onClick={closeModal}>
+            <div className="fixed top-0 right-0 z-10 bg-emerald-100 w-72 h-screen text-end py-2 px-11">
+              <button
+                onClick={closeModal}
+                className="text-2xl hover:text-emerald-400"
+              >
+                X
+              </button>
+              <ul className="text-start mt-3">
+                {nav.map((n) => (
+                  <li key={n.id} className="text-xl mb-5">
+                    <a
+                      href={n.link}
+                      onClick={closeModal}
+                      className="text-emerald-700 font-normal"
+                    >
+                      {n.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+        </ModalContainer>
       )}
     </>
   );
 };
 
-///////////
+/////////// Nav
 
 export const Nav = ({ nav }) => {
-  //const [showModal, setShowModal] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
   const [visible, setVisible] = useState(true);
 
   const dispatch = useDispatch();
   const lg = useSelector(getLg);
-  const sm = useSelector(getShowModal);
 
   /// Idioma
 
@@ -95,29 +146,33 @@ export const Nav = ({ nav }) => {
 
   ///// Para offset para loslinks de las secciones
 
-  document.addEventListener('click', function (e) {
+  document.addEventListener("click", function (e) {
     const target = e.target;
-    if (target.tagName === 'A' && target.getAttribute('href').startsWith('#')) {
+    if (target.tagName === "A" && target.getAttribute("href").startsWith("#")) {
       e.preventDefault();
 
-      const targetId = target.getAttribute('href').substring(1);
+      const targetId = target.getAttribute("href").substring(1);
       const targetElement = document.getElementById(targetId);
 
       if (targetElement) {
         const yOffset = -50; /* Ajusta el valor según tus necesidades */
-        const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        const y =
+          targetElement.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset;
 
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        window.scrollTo({ top: y, behavior: "smooth" });
       }
     }
   });
 
-  ////...
-
   //// Abrir ymodal
   const openModal = () => {
     dispatch(setShowModal(true));
+    dispatch(setTransition(true));
   };
+
+  // ----
 
   return (
     <div

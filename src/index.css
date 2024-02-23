@@ -3,6 +3,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .modal {
+    top: 48px;
+
+  }
+}
+
 
 :root {
   font-family: "Open sans", Helvetica, Arial, sans-serif;
@@ -119,55 +126,4 @@ button:focus {
   .nav_mobile {
     display: none;
   }
-}
-
-
-@keyframes slideIn {
-  from {
-    transform: translateX(288px);
-  }
-  to {
-    transform: translateX(0);
-  }
-}
-
-/* Definición de keyframes para la animación slideOut */
-@keyframes slideOut {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(288px);
-  }
-}
-
-/* Estilos para el contenedor del modal */
-.modal-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-  pointer-events: none;
-}
-
-/* Estilos para mostrar el modal */
-.modal-container.show {
-  display: flex;
-  pointer-events: auto;
-  opacity: 1;
-  animation: slideIn 0.3s ease-in-out;
-}
-
-/* Estilos para ocultar el modal */
-.modal-container.hide {
-  animation: slideOut 0.3s ease-in-out;
-  opacity: 0;
-  pointer-events: none;
 }

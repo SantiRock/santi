@@ -37,7 +37,7 @@ export const data = {
             title: "Acerca de mí",
             image: "./images/about.jpg",
             link: "https://sqpweb.netlify.app/",
-            about: "<p>Con formación de base en <i>Cine y Televisión</i>, hace unos años, me comencé a preguntar sobre la posibilidad de combinar artes gráficas con programación. Esta pregunta me llevó a querer aprender a programar, de ahí a estudiar <i>Artes Digitales</i>, 2016-2018, luego a comenzar a aprender el lenguaje de programación gráfica <a href='https://en.wikipedia.org/wiki/OpenGL' target='_blank'><i>GLSL</i></a>, y de ahí, a querer volverme programador de tiempo completo</p>",
+            about: "<p>Con formación de base en <i>Cine y Televisión</i>, hace unos años, me comencé a preguntar sobre la posibilidad de combinar las artes gráficas con la programación. Esta pregunta me llevó a querer aprender a programar, de ahí a estudiar <i>Artes Digitales</i>, 2016-2018, luego a comenzar a aprender el lenguaje de programación gráfica <a href='https://en.wikipedia.org/wiki/OpenGL' target='_blank'><i>GLSL</i></a>, y de ahí, a querer volverme programador de tiempo completo</p>",
             about2 : 'En 2022 tuve la oportunidad de inscribirme al curso de desarrollo web <i>Fullstack</i> de la academia online <a href="https://goit.global/co/" target="_blank"><i>GoIT</i></a>. Al venir de las artes gráficas, el desarrollo web front-end se me dio con cierta naturalidad y gusto, y actualmente se me presenta como la continuación de mi recorrido profesional.',
             about3 : 'En estos últimos meses me he dedicado a explorar diferentes tipos de técnicas y <b>frameworks</b>. Mi enfoque, por ahora, ha sido más de realizar múltiples páginas "sencillas" que desarrollar una muy compleja, practicando <b>responsive</b>, <b>pixel perfect</b>, <b>estructura de datos</b>(API), <b>lógicas de interacción</b> y/o <b>gestión del estado</b>.',
             about4: 'El desarrollo web, y de aplicaciones, es un campo que me apasiona, en el cual seguiré aprendiendo y ahondando. Si tienes algún proyecto o piensas que podríamos colaborar de alguna forma, no dudes en <a href="#contact">contactarme</a>.'
@@ -47,19 +47,20 @@ export const data = {
             id: "frameworks",
             link:"https://santirock.github.io/IceCream/",
             image:"./images/frameworks.jpg",
-            text: "<p>El explorar diferentes frameworks y librerías, como <i>Solidjs</i>, <i>Vue</i>, <i>Svelte</i>, <i>Redux Toolkit</i> o <i>Tailwind</i>, me ha permitido entender mejor cómo opera javascript, familiarizarme con diferentes tipos de sintaxis, comprender que los frameworks no son tan distintos y que para dominarlos es necesario conocer y entender su sintaxis y hooks específicos. Si bien React es el framework en el que más estoy profundizando y que mejor manejo, me gusta revisar también los otros para ver como hacen las cosas y tener una visión global de javascript. A continuación les dejo algunas implementaciones con diferentes frameworks y librerías, que he hecho.</p>",
+            text: "<p>El explorar diferentes frameworks y librerías, como <i>Solidjs</i>, <i>Vue</i>, <i>Svelte</i>, <i>Redux Toolkit</i> o <i>Tailwind</i>, me ha permitido entender mejor cómo opera javascript, familiarizarme con diferentes tipos de sintaxis, comprender que los frameworks no son tan distintos y que para dominarlos es necesario conocer y entender su sintaxis y hooks específicos.</p>",
+            text2:"<p>Si bien <i>React</i> es el framework en el que más estoy profundizando y que mejor manejo, me gusta revisar también los otros para ver como hacen las cosas y tener una visión global de javascript. También he probado desplegar en diferentes plataformas como <i>Netlify</i>, <i>Vercel</i>, <i>GitHub Pages</i> y/o <i>Render</i>. A continuación les dejo algunas implementaciones con diferentes frameworks y librerías, que he hecho.</p>",
             links: [
                 {
                     id: 0,
                     name: "¿Necesitas una pàgina web?",
                     link: "https://sqpweb.netlify.app/",
-                    plus: "/ Vue.js, Composition API"
+                    plus: "/ Vue.js, Composition API, Netlify"
                 },
                 {
                     id: 1,
                     name: "Portafolio Artìstico",
                     link: "https://sqp.vercel.app/",
-                    plus: "/ SolidJS"
+                    plus: "/ SolidJS, Vercel"
                 },
                 {
                     id: 3,
@@ -265,19 +266,20 @@ export const data = {
             id: "frameworks",
             link:"https://santirock.github.io/IceCream/",
             image:"./images/frameworks.jpg",
-            text: "<p>Exploring different frameworks and libraries, such as <i>Solidjs</i>, <i>Vue</i>, <i>Svelte</i>, <i>Redux Toolkit</i> or <i>Tailwind</i>, has allowed me to better understand how javascript works, to become familiar with different types of syntax, to understand that frameworks are not so different and that to master them it is necessary to know and understand their syntax and specific hooks. Although React is the framework in which I am deepening the most and that I handle better, I also like to review the others to see how they do things and to have a global vision of javascript. Here are some implementations with different frameworks and libraries that I have done</p>",
+            text: "<p>Exploring different frameworks and libraries, such as <i>Solidjs</i>, <i>Vue</i>, <i>Svelte</i>, <i>Redux Toolkit</i> or <i>Tailwind</i>, has allowed me to better understand how javascript works, to become familiar with different types of syntax, to understand that frameworks are not so different and that to master them it is necessary to know and understand their syntax and specific hooks.</p>",
+            text2: "<p>Although <i>React</i> is the framework in which I am deepening the most and that I handle better, I also like to review the others to see how they do things and to have a global vision of javascript. I have also tried deploying on different platforms such as <i>Netlify</i>, <i>Vercel</i>, <i>GitHub Pages</i> and/or <i>Render</i>. Here are some implementations with different frameworks and libraries that I have done</p>",
             links: [
                 {
                     id: 0,
                     name: "Do you need a website?",
                     link: "https://sqpweb.netlify.app/",
-                    plus: "/ Vue.js, Composition API"
+                    plus: "/ Vue.js, Composition API, Netlify"
                 },
                 {
                     id: 1,
                     name: "Artistic Portfolio",
                     link: "https://sqp.vercel.app/",
-                    plus: "/ SolidJS"
+                    plus: "/ SolidJS, Vercel"
                 },
                 {
                     id: 3,

@@ -3,7 +3,7 @@ import { Nav } from "./Nav"
 export function Header ({header, nav}) {
 
     return (
-        <header className="text-center pt-2 sm:text-left mb-5 sm:mb-16 sm:pt-3">
+        <header className="text-center pt-7 sm:text-left mb-7 sm:mb-16 sm:pt-10">
             <Nav nav={nav}/>
             <div className="sm:flex mt-8 items-center justify-center gap-3">
                 <img className="w-1/4 m-auto sm:w-28 sm:m-0" src="./santi.webp" alt="Santiago Quintero"/>

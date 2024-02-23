@@ -8,6 +8,7 @@ const Section = ({content}) => {
             <h3 className="mb-1">{content.title}</h3>
             <div className="my-4 px-5"><a href={content.link} target="_blank"><img src={content.image} alt={content.title} className="rounded-lg"/></a></div>
             <p className="indent-8 text-justify mb-3" dangerouslySetInnerHTML={{__html: content.text }}></p>
+            <p className="indent-8 text-justify mb-3" dangerouslySetInnerHTML={{__html: content.text2 }}></p>
             <ul>
                 {content.links.map(link => (
                     <li key={link.id} className="py-1"><a href={link.link} target="_blank" className="">{link.name}</a> {link.plus}</li>
