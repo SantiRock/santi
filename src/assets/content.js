@@ -271,9 +271,9 @@ export const data = {
             image: "./images/about.jpg",
             link: "https://sqpweb.netlify.app/",
             about: "<p>With a background in <i>Film Studies</i>, a few years ago, I started to wonder about the possibility of combining graphic arts with coding. This question led me to want to learn to code, from there to study <i>Digital Arts</i>, 2016-2018, then to start learning <a href='https://en.wikipedia.org/wiki/OpenGL' target='_blank'><i>openGL</i></a> shading language, and from there, to want to become a full time programmer.</p>",
-            about2 : 'In 2022 I had the opportunity to enroll in the <i>Fullstack</i> web development program at the <a href="https://goit.global/co/" target="_blank"><i>GoIT</i></a> online academy. Coming from a graphic arts background, front-end web development came to me quite naturally and with a certain amount of pleasure, and is now proving to be the continuation of my professional career.',
+            about2 : 'In 2022 I had the opportunity to enroll in the <i>Fullstack</i> web development program at the <a href="https://goit.global/co/" target="_blank"><i>GoIT</i></a> online academy. Coming from a graphic arts background, front-end web development came to me quite naturally and was enjoyable for me, and is now proving to be the continuation of my professional career.',
             about3 : "In the last few months I've been exploring different types of techniques and  <b>frameworks</b>. My focus, for now, has been more on making multiple 'simple' pages than developing a very complex one, practicing <b>responsive</b>, <b>pixel perfect</b>, <b>data structure</b>(API), <b>interaction logics</b> and/or <b>state management</b>.",
-            about4: "Web and application development is a field that I am passionate about, and I will continue to learn and delve deeper into it. If you have any project or you think we could collaborate in any way, don't hesitate to <a href='#contact'>contact me</a>."
+            about4: "Web and application development is a field that I am passionate about, and on which I intend to delve further into. If you have any project or you think we could collaborate in any way, don't hesitate to <a href='#contact'>contact me</a>."
         },
         frameworks: {
             title: "Frameworks",
@@ -281,7 +281,7 @@ export const data = {
             link:"https://santirock.github.io/IceCream/",
             image:"./images/frameworks.jpg",
             text: "<p>Exploring different frameworks and libraries, such as <i>Solidjs</i>, <i>Vue</i>, <i>Svelte</i>, <i>Redux Toolkit</i> or <i>Tailwind</i>, has allowed me to better understand how javascript works, to become familiar with different types of syntax, to understand that frameworks are not so different and that to master them it is necessary to know and understand their syntax and specific hooks.</p>",
-            text2: "<p>Although <i>React</i> is the framework in which I am deepening the most and that I handle better, I also like to review the others to see how they do things and to have a global vision of javascript. I have also tried deploying on different platforms such as <i>Netlify</i>, <i>Vercel</i>, <i>GitHub Pages</i> and/or <i>Render</i>. Here are some implementations with different frameworks and libraries that I have done</p>",
+            text2: "<p>Although <i>React</i> is the framework in which I am familiarisiing myself with most and that I handle better, I also like to review the others to see how they operate and to have a global vision of javascript. I have also tried deploying on different platforms such as <i>Netlify</i>, <i>Vercel</i>, <i>GitHub Pages</i> and/or <i>Render</i>. Here are some implementations with different frameworks and libraries that I have done</p>",
             links: [
                 {
                     id: 0,
@@ -359,7 +359,7 @@ export const data = {
             id: "api",
             image: "./images/api.jpg",
             link: "https://santirock.github.io/Filmoteka/",
-            text: "<p>For me APIs are one of the most interesting, powerful and amazing elements of web development. Being able to bring information, interact and modify the appearance of the page according to a data structure, it's great! In my projects I usually create and work with data structures, in the future I would like to learn more about backend, and eventually create my own APIs. Here are some projects where I have worked with APIs.</p>",
+            text: "<p>For me APIs are one of the most interesting, powerful and amazing elements of web development. Being able to bring information, interact and modify the appearance of the page according to a data structure is great! In my projects I usually create and work with data structures, in the future I would like to learn more about backend, and eventually create my own APIs. Here are some projects where I have worked with APIs.</p>",
             links: [
                 {
                     id: 0,
