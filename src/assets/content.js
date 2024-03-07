@@ -459,7 +459,7 @@ export const data = {
         last: {
             title: "Last Project",
             name: "Multi-Step Form",
-            description: "Multi-step form with progressing status handling. Developed on React and Redux Toolkit. March 2024.",
+            description: "Multi-step form with advanced state management. Developed on React and Redux Toolkit. March 2024.",
             image: "./images/msf.jpg",
             link: "https://santirockk.github.io/multi-step-form/", 
         }
