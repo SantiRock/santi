@@ -68,6 +68,12 @@ export const data = {
                     plus: "/ SolidJS, Vercel"
                 },
                 {
+                    id: 10,
+                    name: "Multi-Step Form",
+                    link: "https://santirockk.github.io/multi-step-form/",
+                    plus: "/ React, Redux Toolkit"
+                },
+                {
                     id: 3,
                     name: "Interactive Comments Section",
                     link: "https://santirockk.github.io/interactive-comments-section/",
@@ -151,6 +157,12 @@ export const data = {
                     link:"https://santirock.github.io/swapi-challenge/",
                     plus: "/ The Star Wars API, Vanilla"
                 },
+                {
+                    id: 4,
+                    name: "Kinopoisk",
+                    link: "https://santirock.github.io/Kinopoisk/",
+                    plus: "/ React, The Movie Database API"
+                },
             ]
         },
         next: {
@@ -161,11 +173,11 @@ export const data = {
             proyects: [
                 {
                     id: 0,
-                    description: "Tienda virtual en Woocommerce, a partir de diseño",
+                    description: "React-Typescript ste",
                 },
                 {
                     id:1,
-                    description: "Tienda virtual en Shopify, a partir de diseño",
+                    description: "React Native App",
                 },
             ],
             titlea: "Aprendiendo actualmente",
@@ -176,15 +188,11 @@ export const data = {
                 },
                 {
                     id: 1,
-                    description: "React",
+                    description: "Node",
                 },
                 {
                     id: 2,
                     description: "Python",
-                },
-                {
-                    id: 3,
-                    description: "Tailwind",
                 },
             ],
             titleap: "Proximamente",
@@ -193,10 +201,6 @@ export const data = {
                     id: 0,
                     description: "Vue"
                 },
-                {
-                    id: 1,
-                    description: "React Native"
-                }
             ],
             titleaf: "En el congleador",
             learnf: [
@@ -221,10 +225,10 @@ export const data = {
         },
         last: {
             title: "Último proyecto",
-            name: "Interactive Comments Section",
-            description: "Una sección de comentarios interactiva desarrollada con React y Redux Toolkit. Había dos retos, que se pareciera lo más posibles al diseño original, y que funcionaran bien las intercaciones.",
-            image: "./images/ics.jpg",
-            link: "https://santirockk.github.io/interactive-comments-section/", 
+            name: "Multi-Step Form",
+            description: "Formulario de varios pasos y con manejo de estado avanzando. Desarrollada on React y Redux Toolkit. Marzo 2024.",
+            image: "./images/msf.jpg",
+            link: "https://santirockk.github.io/multi-step-form/", 
         }
     },
     en: {
@@ -294,6 +298,12 @@ export const data = {
                     name: "Artistic Portfolio",
                     link: "https://sqp.vercel.app/",
                     plus: "/ SolidJS, Vercel"
+                },
+                {
+                    id: 10,
+                    name: "Multi-Step Form",
+                    link: "https://santirockk.github.io/multi-step-form/",
+                    plus: "/ React, Redux Toolkit"
                 },
                 {
                     id: 3,
@@ -379,6 +389,12 @@ export const data = {
                     link:"https://santirock.github.io/swapi-challenge/",
                     plus: "/ The Star Wars API, Vanilla"
                 },
+                {
+                    id: 4,
+                    name: "Kinopoisk",
+                    link: "https://santirock.github.io/Kinopoisk/",
+                    plus: "/ React, The Movie Database API"
+                },
             ]
         },
         next: {
@@ -389,11 +405,11 @@ export const data = {
             proyects: [
                 {
                     id: 0,
-                    description: "WooCommerce online shop, from design",
+                    description: "React-Typescript site",
                 },
                 {
                     id:1,
-                    description: "Shopify online shop, from design.",
+                    description: "React Native App",
                 },
             ],
             titlea: "Currently learning",
@@ -404,15 +420,11 @@ export const data = {
                 },
                 {
                     id: 1,
-                    description: "React",
+                    description: "Node",
                 },
                 {
                     id: 2,
                     description: "Python",
-                },
-                {
-                    id: 3,
-                    description: "Tailwind",
                 },
             ],
             titleap: "Then",
@@ -421,10 +433,7 @@ export const data = {
                     id: 0,
                     description: "Vue"
                 },
-                {
-                    id: 1,
-                    description: "React Native"
-                }
+
             ],
             titleaf: "In the fridge",
             learnf: [
@@ -449,12 +458,10 @@ export const data = {
         },
         last: {
             title: "Last Project",
-            image: "./images/next1.jpg",
-            link: "https://santirock.github.io/glsl-research/",
-            name: "Interactive Comments Section",
-            description: "An interactive comments section developed with React and Redux Toolkit. There were two challenges, to make it look as close as possible to the original design, and to make the interactions work well",
-            image: "./images/ics.jpg",
-            link: "https://santirockk.github.io/interactive-comments-section/", 
+            name: "Multi-Step Form",
+            description: "Multi-step form with progressing status handling. Developed on React and Redux Toolkit. March 2024.",
+            image: "./images/msf.jpg",
+            link: "https://santirockk.github.io/multi-step-form/", 
         }
 
     }
